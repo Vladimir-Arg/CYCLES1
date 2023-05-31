@@ -8,7 +8,7 @@ public class VocationMonthsService {
             if (money >= threshold) { // можем ли отдыхать?
                 count++; // увеличиваем счётчик месяцев отдыха
                 int strtMoney = money;
-                int vocationExpenses = (money - expenses) / 3 * 2;
+                int vocationExpenses = (money - expenses) * 2 / 3;
                 money = money - expenses - vocationExpenses; // деньги на счету = текущие деньги - ежемесячные траты -  траты на отпуск
                 System.out.println(month + " месяц. Денег на начало месяца " + strtMoney + " потратил " + expenses + " потрачено на отдых " + vocationExpenses);
             } else {
